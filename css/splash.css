@@ -1,0 +1,52 @@
+#splash {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: 0 auto;
+    background: black;
+}
+
+#splash>pre {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    color: #fff;
+    opacity: 0.8;
+    font-size: 1.2rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+#splash>pre:after {
+    content: "_";
+    opacity: 1;
+    animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
